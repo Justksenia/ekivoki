@@ -6,6 +6,7 @@ import two from "../components/assets/two.svg";
 import three from "../components/assets/three.svg";
 import four from "../components/assets/four.svg";
 import five from "../components/assets/five.svg";
+import {usual} from "../../src/var";
 
 export default function UsualCard() {
   const [visible, setVisible] = React.useState(false);
@@ -56,7 +57,7 @@ const CardFront = ({ data, theme }) => {
   return (
     <div>
       <div className={theme}>
-      <h2 className="title">{data.theme}</h2>
+      <h2 className="title">{usual[data.theme]}</h2>
       <div className="flex items-center mb-15 pb-10 border-b-2 border-dashed">
         <img src={one} alt="one-dice" width="27" />
         <p className="mx-8 w-50 text-small">слова</p>

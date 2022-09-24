@@ -48,7 +48,7 @@ const SpecialCardBack=()=>{
 
 const SpecialCardFront=({data})=>{
     return (
-        <div className="front">
+        <div className="rounded-10 w-250 h-350">
             <h2 className="title">{Object.keys(special[data.theme])}</h2>
             <p>{Object.values(special[data.theme])}</p>
             <b>{data.card.map(item=><p key={item}>{item}</p>)}</b>
