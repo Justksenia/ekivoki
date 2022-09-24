@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import SpecialCard from "./components/SpecialCard"
+import UsualCard from "./components/UsualCard";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="flex flex-col items-center bg-main" >
+      <header >
+   
+        <p className="text-2xl font-bold text-center justify-center">
+          Hello, comande
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <UsualCard/>
+        <SpecialCard/>
+
       </header>
+
+
     </div>
   );
 }
